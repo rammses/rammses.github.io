@@ -1,6 +1,6 @@
 # Mesut Bayrak · Personal website
 
-A responsive, dependency-free portfolio built from `Resume.md` and the public repositories at https://github.com/rammses. HTML, CSS, and a small script to keep the copyright year current. No build step, external fonts, or tracking.
+A responsive, dependency-free portfolio built from `Resume.md` the bgp-display repository at https://github.com/rammses/bgp-display, and the project archive and training material at https://books.netdev.com.tr. HTML, CSS, and a small script to keep the copyright year current. No build step, external fonts, or tracking.
 
 ## Preview
 
