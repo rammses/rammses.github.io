@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Engineering notes · Local portfolio library</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="panels-data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><span class="mark">MB / ENGINEERING NOTES</span><span class="local">LOCAL DRAFT · OFFLINE</span></header>
+  <main>
+    <section class="intro"><p class="eyebrow">SELECTED TECHNICAL WORK</p><h1>Beyond the<br><em>configuration.</em></h1><p class="lead">Architecture, automation, and the operational detail that connects them. A reusable collection of anonymized engineering notes.</p><p class="note">Evidence labels distinguish documented implementations, demonstrations, and design work.</p></section>
+    <section aria-label="Panel library">
+      <div class="controls"><label>Find a topic<input id="search" type="search" placeholder="BGP, recovery, automation…"></label><label>Discipline<select id="category"><option value="">All disciplines</option></select></label><label>Evidence<select id="evidence"><option value="">All evidence types</option></select></label></div>
+      <p id="count" role="status" aria-live="polite"></p><div id="panels" class="grid"></div><p id="empty" hidden>No matching panels. Try another topic or clear the filters.</p>
+    </section>
+    <noscript><p>JavaScript is disabled. Read the same content in <a href="panels.md">panels.md</a>.</p></noscript>
+  </main>
+  <footer>Prepared for local review · Client details removed · <a href="panels.json" download>Download JSON</a> · <a href="panels.md">Read all notes</a></footer>
+</body>
+</html>
