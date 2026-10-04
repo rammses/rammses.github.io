@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f3ed">
+  <meta name="theme-color" content="#101512">
   <meta name="description" content="Mesut Bayrak — network architect, principal engineer, and automation practitioner based in İstanbul. Networks, cloud infrastructure, and systems at scale.">
   <meta property="og:title" content="Mesut Bayrak · Networks, cloud & automation">
   <meta property="og:description" content="Decades of hands-on engineering. From Unix systems to hyperscale data centers.">
@@ -16,19 +16,19 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="header wrap">
     <a class="wordmark" href="#" aria-label="Mesut Bayrak home">mb<span>.</span></a>
-    <nav aria-label="Main navigation"><a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+    <nav aria-label="Main navigation"><a href="#software">Software</a><a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> MESUT BAYRAK / İSTANBUL, TR</p>
-        <h1 id="hero-title">Good systems.<br>Built from the<br><span>network up.</span></h1>
+        <h1 id="hero-title">Infrastructure.<br>Intelligence.<br><span>Built to connect.</span></h1>
         <p class="intro">I’m Mesut, a network architect and principal engineer. I design infrastructure that scales, automate the repetitive, and make complex systems work together.</p>
-        <div class="hero-actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="https://github.com/rammses">GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="#software">Discover bgp-display <span aria-hidden="true">↗</span></a></div>
         <p class="hero-note">Principal Engineer & Board Member <span>at Eclit</span></p>
       </div>
       <div class="network-art" role="img" aria-label="A network topology connecting cloud infrastructure, a core network, and automation">
-        <div class="art-top"><span>INFRASTRUCTURE, CONNECTED</span><span>FIG. 01</span></div>
+        <div class="art-top"><span>THE SYSTEMS PERSPECTIVE</span><span>FIG. 01</span></div>
         <svg viewBox="0 0 500 420" aria-hidden="true">
           <defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#ccd1c7"/></pattern></defs>
           <rect width="500" height="420" fill="url(#dots)"/>
@@ -41,12 +41,39 @@
         </svg>
         <div class="art-bottom"><span><i></i> DESIGNED TO WORK TOGETHER</span><span>∞</span></div>
       </div>
+      <div class="hero-foot"><span>NETWORK ARCHITECTURE / CLOUD / AUTOMATION</span><a href="#software">SCROLL TO EXPLORE ↓</a></div>
     </section>
     <section class="metrics wrap" aria-label="Experience in numbers">
       <div><strong>1996<span>→</span></strong><p>Engineering journey began</p></div><div><strong>4,000</strong><p>Hypervisor OpenStack cloud administered</p></div><div><strong>144</strong><p>Racks across Earth & Mars deployments</p></div><div><strong>2,000+</strong><p>VMs covered by a patch management platform</p></div>
     </section>
+    <section class="opensource" id="software"><div class="wrap section">
+      <div class="section-heading"><div><p class="eyebrow">01 / SOFTWARE &amp; KNOWLEDGE</p><h2>The network.<br>At your fingertips.</h2></div><a class="text-link" href="https://books.netdev.com.tr/">Netdev knowledge base <span aria-hidden="true">↗</span></a></div>
+      <article class="project featured-project"><div class="featured-copy">
+        <div class="project-top"><span>FEATURED OPEN SOURCE / RUST</span><span>BGP</span></div>
+        <h3>bgp-display</h3>
+        <p class="featured-subtitle">BGP Link Manager · Network operations in your terminal.</p>
+        <p>A Rust terminal application for monitoring and managing BGP sessions across routers from multiple vendors. Inspect live peer state and routes, edit routing policies, and manage neighbors over SSH from one interface.</p>
+        <ul class="feature-list"><li>Live peer monitoring, state alerts, and transition history</li><li>Neighbor, route-map, prefix-list, and community-list editors</li><li>Configuration history with rollback support</li><li>Encrypted credentials and SSH connection multiplexing</li></ul>
+        <div class="tags"><span>Rust</span><span>BGP</span><span>Terminal UI</span><span>SSH</span></div>
+        <div class="feature-links"><a class="button" href="https://github.com/rammses/bgp-display">Explore bgp-display <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/rammses/bgp-display/releases">Releases <span aria-hidden="true">↗</span></a></div>
+      </div>
+        <div class="terminal" aria-label="Illustrative BGP Link Manager interface">
+          <div class="terminal-bar"><span class="window-dots" aria-hidden="true">● ● ●</span><span>bgp-link-manager</span><span>DEMO</span></div>
+          <div class="terminal-tabs" role="tablist" aria-label="Explore BGP capabilities"><button id="tab-peers" role="tab" aria-selected="true" aria-controls="panel-peers">01 Peers</button><button id="tab-routes" role="tab" aria-selected="false" aria-controls="panel-routes" tabindex="-1">02 Routes</button><button id="tab-config" role="tab" aria-selected="false" aria-controls="panel-config" tabindex="-1">03 Config</button></div>
+          <div id="panel-peers" role="tabpanel" aria-labelledby="tab-peers" tabindex="0"><div class="terminal-summary"><span>PEER OVERVIEW</span><span class="terminal-green">● 3 established</span></div><table><thead><tr><th>Neighbor</th><th>ASN</th><th>State</th></tr></thead><tbody><tr><td>192.0.2.1</td><td>64512</td><td>Established</td></tr><tr><td>192.0.2.2</td><td>64513</td><td>Established</td></tr><tr><td>192.0.2.3</td><td>64514</td><td>Established</td></tr></tbody></table><div class="terminal-log"><p><span>→</span> Peer states in one place.</p><p><span>→</span> Follow transitions. Investigate routes.</p></div></div>
+          <div id="panel-routes" role="tabpanel" aria-labelledby="tab-routes" tabindex="0" hidden><div class="terminal-summary"><span>ROUTING INFORMATION BASE</span><span class="terminal-green">IPv4</span></div><table><thead><tr><th>Prefix</th><th>Next hop</th><th>Path</th></tr></thead><tbody><tr><td>198.51.100.0/24</td><td>192.0.2.1</td><td>64512</td></tr><tr><td>203.0.113.0/24</td><td>192.0.2.2</td><td>64513</td></tr><tr><td>0.0.0.0/0</td><td>192.0.2.3</td><td>64514</td></tr></tbody></table><div class="terminal-log"><p><span>→</span> Browse the BGP RIB.</p><p><span>→</span> Search routes without leaving the terminal.</p></div></div>
+          <div id="panel-config" role="tabpanel" aria-labelledby="tab-config" tabindex="0" hidden><div class="terminal-summary"><span>POLICY WORKSPACE</span><span class="terminal-green">Configuration</span></div><div class="config-lines"><p><span>01</span> Neighbor management</p><p><span>02</span> Route maps &amp; prefix lists</p><p><span>03</span> Community lists</p><p><span>04</span> Configuration history &amp; rollback</p></div></div>
+          <div class="terminal-footer"><span>Illustrative data · explore the tabs</span><span aria-hidden="true">▊</span></div>
+        </div>
+      </article>
+      <div class="section-heading knowledge-heading"><div><h3>Field notes &amp; training</h3><p>Documenting the systems, practices, and lessons behind the work.</p></div></div>
+      <div class="repo-list">
+        <a href="https://books.netdev.com.tr/books/netdev/page/finished-projects"><span class="repo-name">Netdev project archive</span><span class="repo-description">Cloud deployments, network automation, security chains, and infrastructure consulting.</span><span class="repo-language">Projects <span aria-hidden="true">↗</span></span></a>
+        <a href="https://books.netdev.com.tr/books/a10-system-administration-training"><span class="repo-name">A10 / ACOS training</span><span class="repo-description">Hands-on material covering load balancing, TLS, high availability, and system administration.</span><span class="repo-language">Training <span aria-hidden="true">↗</span></span></a>
+      </div>
+    </div></section>
     <section class="section wrap" id="work">
-      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2>Complex challenges.<br>Practical engineering.</h2></div><p>A selection of infrastructure projects<br>from the data center to the application.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Complex challenges.<br>Practical engineering.</h2></div><p>A selection of infrastructure projects<br>from the data center to the application.</p></div>
       <div class="project-grid">
         <article class="project"><div class="project-top"><span>TRENDYOL</span><span>01</span></div><h3>Two planets.<br>One connected foundation.</h3><p>EVPN / VXLAN data center design and deployment with Arista: 48 racks at Earth and 96 racks at Mars.</p><div class="tags"><span>Data centers</span><span>EVPN / VXLAN</span><span>Arista</span></div><div class="project-stat">144 <span>racks across two data centers</span></div></article>
         <article class="project"><div class="project-top"><span>ECLIT</span><span>02</span></div><h3>Patch management.<br>At service-provider scale.</h3><p>Designed and deployed a Foreman / Katello platform to deliver Linux patch management as a service for more than 200 clients.</p><div class="tags"><span>Linux</span><span>Foreman / Katello</span><span>Automation</span></div><div class="project-stat">200+ <span>clients · more than 2,000 VMs</span></div></article>
@@ -56,23 +83,6 @@
         <article class="project"><div class="project-top"><span>NETDEV / OBSERVABILITY</span><span>06</span></div><h3>See the fabric.<br>Understand the routing.</h3><p>Fabric monitoring using BGP / BMP messages for a major retail platform in Turkey. Additional work with ntop generated IPFIX logs from mirrored EVPN / VXLAN data center traffic.</p><div class="tags"><span>BGP / BMP</span><span>IPFIX</span><span>EVPN / VXLAN</span></div><a class="text-link project-source" href="https://books.netdev.com.tr/books/netdev/page/finished-projects">View project archive <span aria-hidden="true">↗</span></a></article>
       </div>
     </section>
-    <section class="opensource"><div class="wrap section">
-      <div class="section-heading"><div><p class="eyebrow">02 / SOFTWARE &amp; KNOWLEDGE</p><h2>Built for network engineers.</h2></div><a class="text-link" href="https://books.netdev.com.tr/">Netdev knowledge base <span aria-hidden="true">↗</span></a></div>
-      <article class="project featured-project">
-        <div class="project-top"><span>FEATURED OPEN SOURCE / RUST</span><span>BGP</span></div>
-        <h3>bgp-display</h3>
-        <p class="featured-subtitle">BGP Link Manager · Network operations in your terminal.</p>
-        <p>A Rust terminal application for monitoring and managing BGP sessions across routers from multiple vendors. Inspect live peer state and routes, edit routing policies, and manage neighbors over SSH from one interface.</p>
-        <ul class="feature-list"><li>Live peer monitoring, state alerts, and transition history</li><li>Neighbor, route-map, prefix-list, and community-list editors</li><li>Configuration history with rollback support</li><li>Encrypted credentials and SSH connection multiplexing</li></ul>
-        <div class="tags"><span>Rust</span><span>BGP</span><span>Terminal UI</span><span>SSH</span></div>
-        <div class="feature-links"><a class="button" href="https://github.com/rammses/bgp-display">Explore bgp-display <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/rammses/bgp-display/releases">Releases <span aria-hidden="true">↗</span></a></div>
-      </article>
-      <div class="section-heading knowledge-heading"><div><h3>Field notes &amp; training</h3><p>Documenting the systems, practices, and lessons behind the work.</p></div></div>
-      <div class="repo-list">
-        <a href="https://books.netdev.com.tr/books/netdev/page/finished-projects"><span class="repo-name">Netdev project archive</span><span class="repo-description">Cloud deployments, network automation, security chains, and infrastructure consulting.</span><span class="repo-language">Projects <span aria-hidden="true">↗</span></span></a>
-        <a href="https://books.netdev.com.tr/books/a10-system-administration-training"><span class="repo-name">A10 / ACOS training</span><span class="repo-description">Hands-on material covering load balancing, TLS, high availability, and system administration.</span><span class="repo-language">Training <span aria-hidden="true">↗</span></span></a>
-      </div>
-    </div></section>
     <section class="section wrap about" id="about">
       <div class="about-copy"><p class="eyebrow">03 / THE PERSON BEHIND THE SYSTEMS</p><h2>A curious one.<br>Always building.</h2><p>My engineering journey began with Unix systems in 1996. Since then, I’ve designed enterprise networks, spent 15 years as a managing partner at Mikronet, and led cloud engineering at Trendyol.</p><p>Today, at Eclit, I bring that experience to automation, network and Linux teams, and public and private cloud operations. I’m most at home where networks, software, and infrastructure meet.</p><p class="small-note">Based in İstanbul · Fluent in English</p><h3 class="toolbox-title">My everyday toolkit</h3><div class="tags toolbox"><span>Python</span><span>Rust</span><span>Ansible / AWX</span><span>Terraform</span><span>Linux</span><span>OpenStack</span><span>BGP / EVPN</span><span>Airflow</span><span>Apache NiFi</span><span>AWS / Azure / GCP</span></div></div>
       <div class="timeline" aria-label="Career history">
